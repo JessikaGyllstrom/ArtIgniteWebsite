@@ -39,6 +39,8 @@ small {
 section {
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 .navbar {
     border-bottom: 1px solid var(--purple);
@@ -133,7 +135,6 @@ section {
     max-height: 370px;
     width: 100%;
 }
-
 .gallery-item img, 
 .gallery-item .portfolio-overlay {
     transition: all 0.4s ease;
@@ -159,4 +160,65 @@ section {
 }
 .gallery-item:hover img {
     transform: scale(1.1);
+}
+.artists {
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.artists .hline {
+    width: 70px;
+    height: 1px;
+    margin: 16px auto;
+    background-color: rgba(255, 255, 255, 0.445);
+ }
+ 
+.artists .artists-img img,
+.artists .artists .artists {
+    transition: all 0.4s ease;
+}
+.artists .artists-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 520px;
+}
+.artists .artists-img .social-icons {
+    width: 100%;
+    height: 60px;
+    background-color: var(--teal);
+    position: absolute;  
+    bottom: -60px; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.artists .artists-img .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+} 
+.artists-member .team-member-img .social-icons a:hover {
+    background-color: #fff;
+    color: #E93B81;
+}
+.artists:hover .artists-img .social-icons {
+    bottom: 0;
+}
+ 
+.artists:hover img {
+    transform: translateY(-60px);
 }

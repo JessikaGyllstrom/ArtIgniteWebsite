@@ -222,3 +222,10 @@ section {
 .artists:hover img {
     transform: translateY(-60px);
 }
+form .form-control {
+    border-radius: 0;
+}
+form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--teal);
+}

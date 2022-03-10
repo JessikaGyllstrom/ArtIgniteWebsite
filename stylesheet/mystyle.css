@@ -113,6 +113,7 @@ section {
 .btn-brand:hover {
     background-color: var(--white);
     color: var(--dark);
+    border: 1px solid var(--teal);
 }
 .section-intro {
     text-align: center;
@@ -239,6 +240,9 @@ form .form-control {
 form .form-control:focus {
     box-shadow: none;
     border-color: var(--teal);
+}
+form small {
+    color: var(--dark);
 }
 footer {
     background-color: var(--dark);

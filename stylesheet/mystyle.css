@@ -111,8 +111,8 @@ section {
     font-weight: 400;
 }
 .btn-brand:hover {
-    background-color: var(--white);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--white);
     border: 1px solid var(--teal);
 }
 .section-intro {
